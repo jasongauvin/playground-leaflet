@@ -1,7 +1,7 @@
 const configureAPI = require("./src/server/configure");
 
 module.exports = {
-  publicPath: "./dist",
+  publicPath: "dist",
   devServer: {
     before: configureAPI
   }
