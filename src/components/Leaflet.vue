@@ -101,7 +101,7 @@ export default {
         },
         edit: {
           featureGroup: drawItems,
-          remove: true
+          remove: false
         }
       });
       // Add draw control on map
