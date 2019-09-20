@@ -5,7 +5,7 @@
     <div id="export">
       <div class="title-export">
         <h1>Get Points</h1>
-        <p>(after created and edited)</p>
+        <p>(after created or edited)</p>
       </div>
       <textarea id="to-copy"></textarea>
       <button id="copy" type="button">Copy to clipboard</button>
