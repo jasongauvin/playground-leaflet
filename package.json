@@ -1,0 +1,61 @@
+{
+  "name": "playground-maps",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "nodemon --exec 'vue-cli-service serve'",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "prod": "NODE_ENV=production node src/server"
+  },
+  "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "core-js": "^2.6.5",
+    "leaflet": "^1.5.1",
+    "leaflet-draw": "^1.0.4",
+    "leaflet-geosearch": "^2.7.0",
+    "nodemon": "^1.19.2",
+    "vue": "^2.6.10",
+    "vue2-leaflet": "^2.2.1",
+    "vue2-leaflet-geosearch": "^1.0.6",
+    "vue2-leaflet-markercluster": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "prettier": "^1.18.2",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
