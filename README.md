@@ -6,10 +6,12 @@ I created this project to use Leaflet, leaflet-search and Leaflet.Draw on viewjs
 
 1. You can create zones (polygon / rectangle) at the positions you want
 2. You can generate hexgrids immediately afterwards.
-3. You can also get the geojson of his hexgrids live on the clipboard
+3. You can especially edit them
+4. You can also get the geojson of his hexgrids live on the clipboard
 
 ## To do (for the moment) :
 
+- Fix remove option
 - Generate automatic markers from an API
 - Display the marker and its information on the screen area
 - Use a cluster-marker
