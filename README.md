@@ -2,6 +2,8 @@
 
 ![image](./img.png)
 
+https://playground-leaflet.netlify.com/
+
 I created this project to use Leaflet, leaflet-search and Leaflet.Draw on vuejs without using the Vue2leaflet plugin (which is great but too light for my work). Also, I wanted the code to be maintainable.
 
 1. You can create zones (polygon / rectangle) at the positions you want
