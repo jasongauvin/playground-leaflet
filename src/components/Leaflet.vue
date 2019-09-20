@@ -26,11 +26,8 @@ export default {
   data() {
     return {
       hexa: false,
-      hexaEdit: false,
       layer: false,
-      layerEdit: false,
       hexgrid: false,
-      hexgridEdit: false,
       geosearchOptions: {
         provider: new OpenStreetMapProvider()
       }
@@ -169,8 +166,8 @@ export default {
 
           // Update hexgrid
           let arrayEdited = layer.getLatLngs();
-          this.layerEdit = arrayOfCoordinates(arrayEdited[0]);
-          this.hexaEdit = hexGrid(this.layerEdit);
+          this.layer = arrayOfCoordinates(arrayEdited[0]);
+          this.hexa = hexGrid(this.layer);
 
           // For the copy
           var toCopy = document.getElementById("to-copy"),
@@ -181,9 +178,9 @@ export default {
             return false;
           });
           // Inject getpoints into textarea
-          toCopy.innerHTML = JSON.stringify(this.hexaEdit);
+          toCopy.innerHTML = JSON.stringify(this.hexa);
           // Update hexgrid
-          this.hexgridEdit = L.geoJSON(this.hexaEdit).addTo(map);
+          this.hexgrid = L.geoJSON(this.hexa).addTo(map);
         });
       });
       map.on("draw:deletestop", function(e) {
